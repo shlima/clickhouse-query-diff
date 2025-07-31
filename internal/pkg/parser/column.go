@@ -14,6 +14,9 @@ func (c Columns) String() string {
 	for i := range c {
 		out.WriteString("\n")
 		out.WriteString(c[i].SQL)
+		if len(c)-1 > i {
+			out.WriteString(",")
+		}
 	}
 	return out.String()
 }
