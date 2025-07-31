@@ -31,9 +31,7 @@ const rightSql = ref('')
 const diff = ref('')
 
 watch([leftSql, rightSql], ([newA, newB], [prevA, prevB]) => {
-  if (newA.length && newB.length) {
     load();
-  }
 });
 
 async function load() {
