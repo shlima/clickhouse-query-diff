@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiPath: 'http://127.0.0.1:3333/', // can be overridden by NUXT_PUBLIC_API_PATH environment variable
+      apiPath: 'http://127.0.0.1:3333', // can be overridden by NUXT_PUBLIC_API_PATH environment variable
       version: '0.0.0'
     }
   },

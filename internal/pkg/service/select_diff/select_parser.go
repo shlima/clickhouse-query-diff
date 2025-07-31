@@ -27,5 +27,5 @@ func reorderSelectColumns(sql string) (string, error) {
 		return columns[i].Alias < columns[j].Alias
 	})
 
-	return columns.String(), nil
+	return "SELECT " + columns.String(), nil
 }
